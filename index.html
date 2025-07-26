@@ -1,552 +1,1353 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Your Original Meta Tags -->
-    <meta
-      name="description"
-      content="Explore the portfolio of Krijan Maharjan, a dedicated full stack developer based in Nepal. Discover a range of projects showcasing expertise in web development."
-    />
-    <meta
-      name="keywords"
-      content="full stack developer, web development, portfolio, Krijan Maharjan, Nepal"
-    />
-    <meta
-      property="og:title"
-      content="Krijan Maharjan - Full Stack Developer Portfolio"
-    />
-    <meta
-      property="og:description"
-      content="Explore the portfolio of krijan maharjan, a dedicated full stack developer based in Nepal. Discover a range of projects showcasing expertise in web development."
-    />
-    <meta property="og:image" content="https://www.krijanmaharjan.name.np/" />
-    <meta property="og:url" content="https://www.krijanmaharjan.name.np/" />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Krijan Maharjan" />
-    <link rel="shortcut icon" href="images/samurai.png" type="image/x-icon">
-    <title>Krijan Maharjan </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the portfolio of Krijan Maharjan, a dedicated full stack developer based in Nepal. Discover a range of projects showcasing expertise in web development.">
+  <meta name="keywords" content="full stack developer, web development, portfolio, Krijan Maharjan, Nepal">
+  <meta property="og:title" content="Krijan Maharjan - Full Stack Developer Portfolio">
+  <meta property="og:description" content="Explore the portfolio of krijan maharjan, a dedicated full stack developer based in Nepal. Discover a range of projects showcasing expertise in web development.">
+  <meta property="og:image" content="https://www.krijanmaharjan.name.np/">
+  <meta property="og:url" content="https://www.krijanmaharjan.name.np/">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Krijan Maharjan">
+  <link rel="shortcut icon" href="/assets/img/ninja-blade.png" type="image/x-icon">
+  <title>Krijan Maharjan</title>
+
+  <!-- External Resources -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Kaushan+Script&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'dancing': ['Dancing Script', 'cursive'],
+            'kaushan': ['Kaushan Script', 'cursive'],
+            'space': ['Space Grotesk', 'sans-serif'],
+            'jetbrains': ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            'primary': '#6366f1',
+            'secondary': '#ec4899',
+            'accent': '#06b6d4',
+            'dark': '#0f0f0f',
+            'darker': '#0a0a0a',
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'bounce-slow': 'bounce 3s ease-in-out infinite',
+            'spin-slow': 'spin 8s linear infinite',
+            'fade-in': 'fadeIn 1s ease-out',
+            'slide-up': 'slideUp 0.8s ease-out',
+            'slide-in-left': 'slideInLeft 0.8s ease-out',
+            'scale-in': 'scaleIn 0.5s ease-out',
+            'glow': 'glow 2s ease-in-out infinite alternate',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUp: {
+              '0%': { opacity: '0', transform: 'translateY(50px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            slideInLeft: {
+              '0%': { opacity: '0', transform: 'translateX(-50px)' },
+              '100%': { opacity: '1', transform: 'translateX(0)' },
+            },
+            scaleIn: {
+              '0%': { opacity: '0', transform: 'scale(0.9)' },
+              '100%': { opacity: '1', transform: 'scale(1)' },
+            },
+            glow: {
+              '0%': { boxShadow: '0 0 20px rgba(99, 102, 241, 0.3)' },
+              '100%': { boxShadow: '0 0 40px rgba(99, 102, 241, 0.6)' },
+            },
+          },
+        },
+      },
+    }
+  </script>
 
-  <!-- Favicons -->
-  <link href="assets\img\xing.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Custom Styles -->
   <style>
-    .certificate-box {
-      border: 2px solid;
-      animation: borderColorChange 6s infinite;
+    /* Global Styles */
+    * {
+      cursor: none !important;
     }
-    @keyframes borderColorChange {
-      0% { border-color: #ff6b6b; box-shadow: 0 4px 15px rgba(255, 107, 107, 0.5); }
-      25% { border-color: #4ecdc4; box-shadow: 0 4px 15px rgba(78, 205, 196, 0.5); }
-      50% { border-color: #f7b731; box-shadow: 0 4px 15px rgba(247, 183, 49, 0.5); }
-      75% { border-color: #ff9ff3; box-shadow: 0 4px 15px rgba(255, 159, 243, 0.5); }
-      100% { border-color: #ff6b6b; box-shadow: 0 4px 15px rgba(255, 107, 107, 0.5); }
+
+    body {
+      background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #0f0f0f 100%);
     }
-    </style>
-  
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Custom Cursor */
+    .cursor {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      background: linear-gradient(45deg, #6366f1, #ec4899);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transition: transform 0.2s ease;
+      mix-blend-mode: difference;
+    }
+
+    .cursor-follower {
+      position: fixed;
+      width: 40px;
+      height: 40px;
+      border: 2px solid rgba(99, 102, 241, 0.3);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9998;
+      transition: all 0.3s ease;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0f0f0f;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #6366f1, #ec4899);
+      border-radius: 4px;
+    }
+
+    /* Preloader Styles */
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      z-index: 10000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.8s ease;
+    }
+
+    .loader-container {
+      position: relative;
+      width: 120px;
+      height: 120px;
+    }
+
+    .loader-circle {
+      position: absolute;
+      border: 3px solid transparent;
+      border-radius: 50%;
+      animation: spin 2s linear infinite;
+    }
+
+    .loader-circle:nth-child(1) {
+      width: 120px;
+      height: 120px;
+      border-top: 3px solid #6366f1;
+      animation-duration: 2s;
+    }
+
+    .loader-circle:nth-child(2) {
+      width: 100px;
+      height: 100px;
+      top: 10px;
+      left: 10px;
+      border-right: 3px solid #ec4899;
+      animation-duration: 1.5s;
+      animation-direction: reverse;
+    }
+
+    .loader-circle:nth-child(3) {
+      width: 80px;
+      height: 80px;
+      top: 20px;
+      left: 20px;
+      border-bottom: 3px solid #06b6d4;
+      animation-duration: 1s;
+    }
+
+    .loader-text {
+      margin-top: 30px;
+      color: #6366f1;
+      font-size: 18px;
+      font-weight: 600;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Gradient Text Effect */
+    .gradient-text {
+      background: linear-gradient(135deg, #6366f1, #ec4899, #06b6d4);
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradient-shift 5s ease infinite;
+    }
+
+    @keyframes gradient-shift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    /* Glass Effect */
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Floating Particles */
+    .particle {
+      position: absolute;
+      background: #6366f1;
+      border-radius: 50%;
+      pointer-events: none;
+      opacity: 0.7;
+      animation: float-particle 8s linear infinite;
+    }
+
+    @keyframes float-particle {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.7;
+      }
+      90% {
+        opacity: 0.7;
+      }
+      100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Component Specific Styles */
+    .hero-text { animation: slideUp 1s ease-out 0.5s both; }
+    .hero-subtitle { animation: slideUp 1s ease-out 0.7s both; }
+    .hero-description { animation: slideUp 1s ease-out 0.9s both; }
+    .hero-buttons { animation: slideUp 1s ease-out 1.1s both; }
+    .hero-image { animation: scaleIn 1s ease-out 0.3s both; }
+
+    .skill-card {
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      background: linear-gradient(145deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.05));
+      border-color: rgba(99, 102, 241, 0.3);
+    }
+
+    .progress-ring {
+      transform: rotate(-90deg);
+    }
+
+    .progress-ring-circle {
+      stroke-dasharray: 251.2;
+      stroke-dashoffset: 251.2;
+      transition: stroke-dashoffset 1.5s ease-in-out;
+      stroke-linecap: round;
+    }
+
+    .certificate-card {
+      transition: all 0.4s ease;
+      transform-style: preserve-3d;
+    }
+
+    .certificate-card:hover {
+      transform: perspective(1000px) rotateX(5deg) rotateY(5deg) translateY(-10px);
+    }
+
+    .nav-active {
+      color: #6366f1;
+      position: relative;
+    }
+
+    .nav-active::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 6px;
+      height: 6px;
+      background: #6366f1;
+      border-radius: 50%;
+    }
+
+    .typewriter {
+      border-right: 3px solid #6366f1;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      0%, 50% { border-color: transparent; }
+      51%, 100% { border-color: #6366f1; }
+    }
+
+    /* Button Styles */
+    .btn-primary {
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .btn-primary:hover::before {
+      left: 100%;
+    }
+
+    .btn-secondary {
+      border: 2px solid #6366f1;
+      background: transparent;
+      transition: all 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      background: #6366f1;
+      box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+    }
+  </style>
 </head>
 
-<body class="index-page">
-
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-      <img src="assets\img\pp.jpg" alt="" class="img-fluid rounded-circle">
+<body class="text-white font-space overflow-x-hidden">
+  
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="loader-container">
+      <div class="loader-circle"></div>
+      <div class="loader-circle"></div>
+      <div class="loader-circle"></div>
     </div>
+    <div class="loader-text font-kaushan">Loading Portfolio...</div>
+  </div>
 
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Krijan Maharjan</h1>
-    </a>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
 
-    <div class="social-links text-center">
-      <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fkrijan-maharjan-06a086317%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR3jT86DG1T7dFplL5cEZcttmryjjwACtOKUj4WOIrLT5LExgflk1qCqBIM_aem_QCUHdVNIMT9tNUEA2zmP9Q&h=AT1cTqOZiTNGFVAYxVpgLG8pyuwAX9Vlxw_7-6iWcS5cucWHLrSfAHPlqCE_VD47mROem5TWWSMyFEItkF28VJG5_U98zR7wLaeYMR67C5A37pfWjmEhAkKi2yiptxX-66xK4BNRbNGua1sizBSDaQ" class="linkedin"><i class="bi bi-linkedin"></i></a>
+  <!-- Floating Particles Background -->
+  <div class="fixed inset-0 pointer-events-none z-0" id="particles-container"></div>
 
-      <a href="https://www.facebook.com/share/1CLCZT9Bos/" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fkrijan446%3Figsh%3DbGg5YmF0OGxqZmR0%26fbclid%3DIwZXh0bgNhZW0CMTAAAR0WnC4MyN3BL6_rTdSU8_qnqufJXNaam-zIgMnFfFNQTSEIy5sG_j8eVnw_aem_tOhY4mRt4un1lUKE4JgZpA&h=AT3smBCGJ8ML6P8MdtaKqIg-0HsjscwTQaQzZ5P00TgskAsLDSUDDDiFf-M2x2l5czZU3EQwlI0mrzxSPVcWaf1djCVlgZ4ne9uEAqe0DE3CdgUo-iL4zHjOORrINMQYZctYFVp58yrH7qC3yyXmjA" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> certificates</a></li>
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="text-2xl font-dancing gradient-text font-bold">
+          Krijan Maharjan
+        </div>
         
-       
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets\img\pexels-harold-vasquez-853421-2653362.jpg" alt="" data-aos="fade-in" class="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Krijan Maharjan</h2>
-        <p>I'm <span class="typed" data-typed-items="programmer, Developer">developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 style="color: rgb(158, 125, 125);">About</h2>
-        <p>👋 Hello! I'm Krijan Maharjan, an enthusiastic IT student passionate about technology and problem-solving.<br>
-
-          💻 With a strong foundation in programming, I enjoy turning ideas into functional code. I also have basic knowledge in development, allowing me to understand both the logical and practical aspects of building applications.<br>
-          
-          🔧 Skills & Interests:<br>
-          
-          Programming Languages: Python, JavaScript, C++ , C,django<br>
-          
-          Web Development: HTML, CSS, basic frameworks,react<br>
-          
-          Problem-solving & Algorithms<br>
-          
-          Exploring new tech trends<br>
-          
-          🚀 I’m constantly learning and expanding my skills to become a well-rounded developer. Whether it’s coding, debugging, or collaborating on projects, I love the challenges that come with technology.<br>
-          
-          📫 Let’s connect and build something amazing together!</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets\img\my.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>programmer &amp; Web Developer.</h2>
-           
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>7 jan 2007</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://www.krijanmaharjan.name.np/">www.krijanmaharjan.name.np</a></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+977 9813638784</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kirtipur, Nepal</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>19</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bacholer IT(BSC.CSIT)</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>krijanmaharjan31@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>not yet</span></li>
-                </ul>
-              </div>
-            </div>
-            
-          </div>
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#home" class="nav-link flex items-center gap-2 text-gray-300 hover:text-primary transition-all duration-300">
+            <i class="ri-home-4-line text-lg"></i>
+            <span>Home</span>
+          </a>
+          <a href="#about" class="nav-link flex items-center gap-2 text-gray-300 hover:text-primary transition-all duration-300">
+            <i class="ri-user-3-line text-lg"></i>
+            <span>About</span>
+          </a>
+          <a href="#skills" class="nav-link flex items-center gap-2 text-gray-300 hover:text-primary transition-all duration-300">
+            <i class="ri-code-s-slash-line text-lg"></i>
+            <span>Skills</span>
+          </a>
+          <a href="#portfolio" class="nav-link flex items-center gap-2 text-gray-300 hover:text-primary transition-all duration-300">
+            <i class="ri-medal-line text-lg"></i>
+            <span>Certificates</span>
+          </a>
+          <a href="#contact" class="nav-link flex items-center gap-2 text-gray-300 hover:text-primary transition-all duration-300">
+            <i class="ri-mail-line text-lg"></i>
+            <span>Contact</span>
+          </a>
         </div>
 
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-white hover:text-primary transition-colors" id="mobile-menu-btn">
+          <i class="ri-menu-3-line text-2xl"></i>
+        </button>
       </div>
 
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      
-    </section><!-- /Stats Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>skills on differrent programmning languags as well as scripting languages</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill"><span>react</span> <i class="val">40%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>  <!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>python</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>django</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>C</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>c++</span> <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <!-- End Skills Item -->
-
-          </div>
-
+      <!-- Mobile Menu -->
+      <div class="md:hidden hidden mt-6 pb-4 border-t border-gray-700" id="mobile-menu">
+        <div class="flex flex-col space-y-4 pt-4">
+          <a href="#home" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors">
+            <i class="ri-home-4-line"></i>
+            <span>Home</span>
+          </a>
+          <a href="#about" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors">
+            <i class="ri-user-3-line"></i>
+            <span>About</span>
+          </a>
+          <a href="#skills" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors">
+            <i class="ri-code-s-slash-line"></i>
+            <span>Skills</span>
+          </a>
+          <a href="#portfolio" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors">
+            <i class="ri-medal-line"></i>
+            <span>Certificates</span>
+          </a>
+          <a href="#contact" class="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors">
+            <i class="ri-mail-line"></i>
+            <span>Contact</span>
+          </a>
         </div>
-
       </div>
+    </div>
+  </nav>
 
-    </section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>"Enthusiastic and skilled IT student with a strong foundation in programming (C, C++, Python) and full-stack development (frontend & backend). Currently pursuing a Bachelor’s in Information Technology . Passionate about problem-solving and eager to apply technical knowledge in real-world scenarios."</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>krijan Maharjan</h4>
-              <p><em>The student of bacholer of science and information technology recently in 4th sem</em></p>
-              <ul>
-                <li>kirtipur,kathmandu</li>
-                <li>9813638784</li>
-                <li>krijanmaharjan31@gmail.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>BACHOLER IN SCIENCE &amp; INFORMATION TECHNOLOGY</h4>
-              <h5>2080 - 2084</h5>
-              <p><em>Assian college of higher studies(tu affiliated)</em></p>
-              <p>one of the college providing the IT courses.It is the tribhuwan university affiliated college located at ekantakuna,lalitput </p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>+2 science background (computer group)</h4>
-              <h5>2077 - 2079</h5>
-              <p><em>Golden gate international college</em></p>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Skill</h3>
-            <div class="resume-item">
-              <h4>Skills</h4>
-              <ul>
-                <li>web development</li>
-                <li>react</li>
-                <li>python,c++,c,javascript</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            
-            
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
-
-   
-      <section id="portfolio" class="portfolio section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>certificates</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-         
-
-          <div class=" row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-            <a href="assets/img/download.jpeg">
-            <div class="certificate-box col-lg-4 col-md-6 portfolio-item isotope-item filter-app m-[10px]">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/download.jpeg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  
-                  <p></p>
-                </div> 
-              </div>
-            </div>
-            </a><!-- End Portfolio Item -->
-            <a href="assets/img/download (1).jpeg">
-            <div class="certificate-box col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/download (1).jpeg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  
-                  <p></p>
-                 
-                </div>
-              </div>
-            </div>
-            </a><!-- End Portfolio Item -->
-            <a href="assets/img/download (2).jpeg"> 
-            <div class=" certificate-box col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/download (2).jpeg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  
-                  <p></p>
-                  
-                </div>
-              </div>
-            </div>
-             </a><!-- End Portfolio Item -->
-            <a href="assets/img/download (3).jpeg">  
-            <div class=" certificate-box col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/download (3).jpeg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  
-                  <p></p>
-
-                  
-                </div>
-              </div>
-            </div>
-            </a>
-            <a href="assets/img/download (4).jpeg">
-             <div class="certificate-box col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/download (4).jpeg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  
-                  <p></p>
-                  
-                  
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            </a>
-
-           
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-      
-   
- 
-
-
-      <!-- Section Title -->
-      
-   
-
-    <!-- Services Section -->
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10"></div>
     
-   
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
+    <div class="container mx-auto px-6 py-20">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
         
-      </div>
+        <!-- Text Content -->
+        <div class="space-y-8 lg:pr-8">
+          <div class="hero-text space-y-4">
+            <div class="flex items-center gap-3 text-primary">
+              <div class="w-12 h-0.5 bg-gradient-to-r from-primary to-secondary"></div>
+              <span class="text-lg font-jetbrains">Hello, I'm</span>
+            </div>
+            
+            <h1 class="text-5xl lg:text-7xl font-kaushan gradient-text leading-tight">
+              Krijan
+              <br>
+              <span class="text-4xl lg:text-6xl">Maharjan</span>
+            </h1>
+          </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>samal ward no-3,Kirtipur,Kathmandu,Nepal</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+977 9813638784</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>krijanmaharjan31@gmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.9457793894862!2d85.2715280265079!3d27.679771095429814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190038024029%3A0x42694026c06637f4!2sSamal%20dhoka!5e1!3m2!1sen!2snp!4v1742873739826!5m2!1sen!2snp" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="hero-subtitle">
+            <div class="text-2xl lg:text-3xl font-jetbrains text-gray-300">
+              <span>I'm a </span>
+              <span class="text-primary font-bold typewriter" id="typewriter-text">Developer</span>
             </div>
           </div>
 
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+          <div class="hero-description">
+            <p class="text-lg lg:text-xl text-gray-400 leading-relaxed max-w-2xl">
+              🚀 Passionate full-stack developer crafting innovative digital solutions. 
+              I transform ideas into elegant, functional code that makes a difference.
+            </p>
+          </div>
 
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
+          <div class="hero-buttons flex flex-col sm:flex-row gap-4">
+            <a href="#portfolio" class="btn-primary px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25">
+              <i class="ri-eye-line mr-2"></i>
+              View My Work
+            </a>
+            <a href="#contact" class="btn-secondary px-8 py-4 rounded-full font-semibold text-primary">
+              <i class="ri-chat-1-line mr-2"></i>
+              Let's Talk
+            </a>
+          </div>
 
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
+          <!-- Social Links -->
+          <div class="flex items-center gap-4 pt-4">
+            <span class="text-gray-500 text-sm">Follow me:</span>
+            <div class="flex gap-3">
+              <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fkrijan-maharjan-06a086317" 
+                 class="w-10 h-10 glass rounded-full flex items-center justify-center hover:text-primary transition-all duration-300 hover:scale-110">
+                <i class="ri-linkedin-line"></i>
+              </a>
+              <a href="https://www.facebook.com/share/1CLCZT9Bos/" 
+                 class="w-10 h-10 glass rounded-full flex items-center justify-center hover:text-primary transition-all duration-300 hover:scale-110">
+                <i class="ri-facebook-line"></i>
+              </a>
+              <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fkrijan446" 
+                 class="w-10 h-10 glass rounded-full flex items-center justify-center hover:text-primary transition-all duration-300 hover:scale-110">
+                <i class="ri-instagram-line"></i>
+              </a>
+            </div>
+          </div>
         </div>
 
+        <!-- Hero Image -->
+        <div class="hero-image flex justify-center lg:justify-end">
+          <div class="relative">
+            <div class="w-80 h-80 lg:w-96 lg:h-96 relative">
+              <!-- Animated Background Elements -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-full animate-spin-slow"></div>
+              <div class="absolute inset-4 bg-gradient-to-bl from-accent/20 to-primary/20 rounded-full animate-pulse-slow"></div>
+              
+              <!-- Profile Image -->
+              <img src="assets/img/pp.jpg" 
+                   alt="Krijan Maharjan" 
+                   class="absolute inset-8 w-64 h-64 lg:w-80 lg:h-80 rounded-full object-cover border-4 border-white/20 animate-float">
+              
+              <!-- Floating Icons -->
+              <div class="absolute top-0 right-0 w-16 h-16 glass rounded-full flex items-center justify-center animate-bounce-slow">
+                <i class="ri-code-s-slash-line text-2xl text-primary"></i>
+              </div>
+              <div class="absolute bottom-0 left-0 w-16 h-16 glass rounded-full flex items-center justify-center animate-bounce-slow" style="animation-delay: 1s;">
+                <i class="ri-palette-line text-2xl text-secondary"></i>
+              </div>
+              <div class="absolute top-1/2 right-0 w-12 h-12 glass rounded-full flex items-center justify-center animate-bounce-slow" style="animation-delay: 2s;">
+                <i class="ri-rocket-line text-lg text-accent"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div class="flex flex-col items-center gap-2 text-gray-400">
+        <span class="text-sm font-jetbrains">Scroll Down</span>
+        <i class="ri-arrow-down-line text-xl"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 relative">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-6xl font-kaushan gradient-text mb-6">About Me</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
       </div>
 
-    </section><!-- /Contact Section -->
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-8 animate-slide-in-left">
+          <div class="space-y-6 text-lg text-gray-300 leading-relaxed">
+            <p>
+              👋 Hello! I'm <span class="text-primary font-semibold">Krijan Maharjan</span>, 
+              an enthusiastic IT student passionate about technology and problem-solving.
+            </p>
+            <p>
+              💻 With a strong foundation in programming, I enjoy turning ideas into functional code. 
+              I have knowledge in both frontend and backend development, allowing me to understand 
+              the complete picture of building applications.
+            </p>
+            <p>
+              🚀 I'm constantly learning and expanding my skills to become a well-rounded developer. 
+              Whether it's coding, debugging, or collaborating on projects, I love the challenges 
+              that come with technology.
+            </p>
+          </div>
 
-  </main>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="glass p-6 rounded-xl hover:bg-primary/10 transition-all duration-300">
+              <i class="ri-cake-3-line text-3xl text-primary mb-3"></i>
+              <div class="text-gray-400 text-sm uppercase tracking-wider">Age</div>
+              <div class="text-2xl font-bold text-white">19</div>
+            </div>
+            <div class="glass p-6 rounded-xl hover:bg-secondary/10 transition-all duration-300">
+              <i class="ri-graduation-cap-line text-3xl text-secondary mb-3"></i>
+              <div class="text-gray-400 text-sm uppercase tracking-wider">Degree</div>
+              <div class="text-xl font-bold text-white">BSC.CSIT</div>
+            </div>
+            <div class="glass p-6 rounded-xl hover:bg-accent/10 transition-all duration-300">
+              <i class="ri-map-pin-line text-3xl text-accent mb-3"></i>
+              <div class="text-gray-400 text-sm uppercase tracking-wider">Location</div>
+              <div class="text-lg font-bold text-white">Kirtipur, Nepal</div>
+            </div>
+            <div class="glass p-6 rounded-xl hover:bg-primary/10 transition-all duration-300">
+              <i class="ri-mail-line text-3xl text-primary mb-3"></i>
+              <div class="text-gray-400 text-sm uppercase tracking-wider">Email</div>
+              <div class="text-sm font-bold text-white break-all">krijanmaharjan31@gmail.com</div>
+            </div>
+          </div>
+        </div>
 
-  <footer id="footer" class="footer position-relative light-background">
+        <div class="animate-slide-up">
+          <div class="relative group">
+            <div class="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <img src="assets/img/my.jpg" 
+                 alt="Krijan Maharjan" 
+                 class="relative w-full rounded-2xl shadow-2xl transform transition-all duration-500 group-hover:scale-105">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-   
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 relative">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-6xl font-kaushan gradient-text mb-6">Skills & Expertise</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+        <p class="text-xl text-gray-400 mt-6">Technologies and languages I work with</p>
+      </div>
 
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- HTML/CSS Skill -->
+        <div class="skill-card p-8 rounded-2xl text-center group">
+          <div class="relative w-24 h-24 mx-auto mb-6">
+            <svg class="progress-ring w-24 h-24" viewBox="0 0 84 84">
+              <circle cx="42" cy="42" r="40" stroke="rgba(255,255,255,0.1)" stroke-width="4" fill="none"/>
+              <circle cx="42" cy="42" r="40" stroke="url(#gradient1)" stroke-width="4" fill="none" 
+                      class="progress-ring-circle" data-percentage="80"/>
+              <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#6366f1"/>
+                  <stop offset="100%" style="stop-color:#ec4899"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i class="ri-html5-line text-3xl text-primary group-hover:scale-110 transition-transform duration-300"></i>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">HTML/CSS</h3>
+          <p class="text-gray-400 text-sm mb-4">Frontend Technologies</p>
+          <div class="text-2xl font-bold text-primary">80%</div>
+        </div>
+
+        <!-- JavaScript Skill -->
+        <div class="skill-card p-8 rounded-2xl text-center group">
+          <div class="relative w-24 h-24 mx-auto mb-6">
+            <svg class="progress-ring w-24 h-24" viewBox="0 0 84 84">
+              <circle cx="42" cy="42" r="40" stroke="rgba(255,255,255,0.1)" stroke-width="4" fill="none"/>
+              <circle cx="42" cy="42" r="40" stroke="url(#gradient2)" stroke-width="4" fill="none" 
+                      class="progress-ring-circle" data-percentage="50"/>
+              <defs>
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#ec4899"/>
+                  <stop offset="100%" style="stop-color:#06b6d4"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i class="ri-javascript-line text-3xl text-secondary group-hover:scale-110 transition-transform duration-300"></i>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">JavaScript</h3>
+          <p class="text-gray-400 text-sm mb-4">Dynamic Programming</p>
+          <div class="text-2xl font-bold text-secondary">50%</div>
+        </div>
+
+        <!-- React Skill -->
+        <div class="skill-card p-8 rounded-2xl text-center group">
+          <div class="relative w-24 h-24 mx-auto mb-6">
+            <svg class="progress-ring w-24 h-24" viewBox="0 0 84 84">
+              <circle cx="42" cy="42" r="40" stroke="rgba(255,255,255,0.1)" stroke-width="4" fill="none"/>
+              <circle cx="42" cy="42" r="40" stroke="url(#gradient3)" stroke-width="4" fill="none" 
+                      class="progress-ring-circle" data-percentage="40"/>
+              <defs>
+                <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#06b6d4"/>
+                  <stop offset="100%" style="stop-color:#6366f1"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i class="ri-reactjs-line text-3xl text-accent group-hover:scale-110 transition-transform duration-300"></i>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">React</h3>
+          <p class="text-gray-400 text-sm mb-4">Frontend Framework</p>
+          <div class="text-2xl font-bold text-accent">40%</div>
+        </div>
+
+        <!-- Python Skill -->
+        <div class="skill-card p-8 rounded-2xl text-center group">
+          <div class="relative w-24 h-24 mx-auto mb-6">
+            <svg class="progress-ring w-24 h-24" viewBox="0 0 84 84">
+              <circle cx="42" cy="42" r="40" stroke="rgba(255,255,255,0.1)" stroke-width="4" fill="none"/>
+              <circle cx="42" cy="42" r="40" stroke="url(#gradient4)" stroke-width="4" fill="none" 
+                      class="progress-ring-circle" data-percentage="80"/>
+              <defs>
+                <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#6366f1"/>
+                  <stop offset="100%" style="stop-color:#ec4899"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i class="ri-file-code-line text-3xl text-primary group-hover:scale-110 transition-transform duration-300"></i>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Python</h3>
+          <p class="text-gray-400 text-sm mb-4">Backend Development</p>
+          <div class="text-2xl font-bold text-primary">80%</div>
+        </div>
+
+        <!-- Django Skill -->
+        <div class="skill-card p-8 rounded-2xl text-center group">
+          <div class="relative w-24 h-24 mx-auto mb-6">
+            <svg class="progress-ring w-24 h-24" viewBox="0 0 84 84">
+              <circle cx="42" cy="42" r="40" stroke="rgba(255,255,255,0.1)" stroke-width="4" fill="none"/>
+              <circle cx="42" cy="42" r="40" stroke="url(#gradient5)" stroke-width="4" fill="none" 
+                      class="progress-ring-circle" data-percentage="70"/>
+              <defs>
+                <linearGradient id="gradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#ec4899"/>
+                  <stop offset="100%" style="stop-color:#06b6d4"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i class="ri-database-2-line text-3xl text-secondary group-hover:scale-110 transition-transform duration-300"></i>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Django</h3>
+          <p class="text-gray-400 text-sm mb-4">Web Framework</p>
+          <div class="text-2xl font-bold text-secondary">70%</div>
+        </div>
+
+        <!-- C Programming Skill -->
+        <div class="skill-card p-8 rounded-2xl text-center group">
+          <div class="relative w-24 h-24 mx-auto mb-6">
+            <svg class="progress-ring w-24 h-24" viewBox="0 0 84 84">
+              <circle cx="42" cy="42" r="40" stroke="rgba(255,255,255,0.1)" stroke-width="4" fill="none"/>
+              <circle cx="42" cy="42" r="40" stroke="url(#gradient6)" stroke-width="4" fill="none" 
+                      class="progress-ring-circle" data-percentage="80"/>
+              <defs>
+                <linearGradient id="gradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#06b6d4"/>
+                  <stop offset="100%" style="stop-color:#6366f1"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i class="ri-terminal-line text-3xl text-accent group-hover:scale-110 transition-transform duration-300"></i>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">C</h3>
+          <p class="text-gray-400 text-sm mb-4">System Programming</p>
+          <div class="text-2xl font-bold text-accent">80%</div>
+        </div>
+
+        <!-- C++ Skill -->
+        <div class="skill-card p-8 rounded-2xl text-center group">
+          <div class="relative w-24 h-24 mx-auto mb-6">
+            <svg class="progress-ring w-24 h-24" viewBox="0 0 84 84">
+              <circle cx="42" cy="42" r="40" stroke="rgba(255,255,255,0.1)" stroke-width="4" fill="none"/>
+              <circle cx="42" cy="42" r="40" stroke="url(#gradient7)" stroke-width="4" fill="none" 
+                      class="progress-ring-circle" data-percentage="60"/>
+              <defs>
+                <linearGradient id="gradient7" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#6366f1"/>
+                  <stop offset="100%" style="stop-color:#ec4899"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i class="ri-code-s-slash-line text-3xl text-primary group-hover:scale-110 transition-transform duration-300"></i>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">C++</h3>
+          <p class="text-gray-400 text-sm mb-4">Object Oriented</p>
+          <div class="text-2xl font-bold text-primary">60%</div>
+        </div>
+
+        <!-- Problem Solving Skill -->
+        <div class="skill-card p-8 rounded-2xl text-center group">
+          <div class="relative w-24 h-24 mx-auto mb-6">
+            <svg class="progress-ring w-24 h-24" viewBox="0 0 84 84">
+              <circle cx="42" cy="42" r="40" stroke="rgba(255,255,255,0.1)" stroke-width="4" fill="none"/>
+              <circle cx="42" cy="42" r="40" stroke="url(#gradient8)" stroke-width="4" fill="none" 
+                      class="progress-ring-circle" data-percentage="85"/>
+              <defs>
+                <linearGradient id="gradient8" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#ec4899"/>
+                  <stop offset="100%" style="stop-color:#06b6d4"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i class="ri-lightbulb-line text-3xl text-secondary group-hover:scale-110 transition-transform duration-300"></i>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Problem Solving</h3>
+          <p class="text-gray-400 text-sm mb-4">Algorithmic Thinking</p>
+          <div class="text-2xl font-bold text-secondary">85%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio/Certificates Section -->
+  <section id="portfolio" class="py-20 relative">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-6xl font-kaushan gradient-text mb-6">Certificates</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+        <p class="text-xl text-gray-400 mt-6">My achievements and certifications</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Certificate 1 -->
+        <div class="certificate-card glass rounded-2xl overflow-hidden group">
+          <div class="relative overflow-hidden">
+            <img src="assets/img/download.jpeg" 
+                 alt="Programming Certificate" 
+                 class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute top-4 right-4 w-12 h-12 bg-primary/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+              <i class="ri-award-line text-primary text-xl"></i>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-xl font-bold text-white mb-2">Programming Excellence</h3>
+              <p class="text-gray-300 text-sm">Advanced programming concepts and best practices</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between">
+              <span class="text-primary text-sm font-semibold uppercase tracking-wider">Certificate</span>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                <span class="text-gray-400 text-xs">Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="certificate-card glass rounded-2xl overflow-hidden group">
+          <div class="relative overflow-hidden">
+            <img src="assets/img/download (1).jpeg" 
+                 alt="Web Development Certificate" 
+                 class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute top-4 right-4 w-12 h-12 bg-secondary/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+              <i class="ri-award-line text-secondary text-xl"></i>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-xl font-bold text-white mb-2">Web Development</h3>
+              <p class="text-gray-300 text-sm">Full-stack web development mastery</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between">
+              <span class="text-secondary text-sm font-semibold uppercase tracking-wider">Certificate</span>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                <span class="text-gray-400 text-xs">Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="certificate-card glass rounded-2xl overflow-hidden group">
+          <div class="relative overflow-hidden">
+            <img src="assets/img/download (2).jpeg" 
+                 alt="Python Certificate" 
+                 class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute top-4 right-4 w-12 h-12 bg-accent/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+              <i class="ri-award-line text-accent text-xl"></i>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-xl font-bold text-white mb-2">Python Mastery</h3>
+              <p class="text-gray-300 text-sm">Advanced Python programming techniques</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between">
+              <span class="text-accent text-sm font-semibold uppercase tracking-wider">Certificate</span>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                <span class="text-gray-400 text-xs">Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 4 -->
+        <div class="certificate-card glass rounded-2xl overflow-hidden group">
+          <div class="relative overflow-hidden">
+            <img src="assets/img/download (3).jpeg" 
+                 alt="Algorithm Certificate" 
+                 class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute top-4 right-4 w-12 h-12 bg-primary/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+              <i class="ri-award-line text-primary text-xl"></i>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-xl font-bold text-white mb-2">Algorithm Design</h3>
+              <p class="text-gray-300 text-sm">Data structures and algorithms expertise</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between">
+              <span class="text-primary text-sm font-semibold uppercase tracking-wider">Certificate</span>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                <span class="text-gray-400 text-xs">Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 5 -->
+        <div class="certificate-card glass rounded-2xl overflow-hidden group">
+          <div class="relative overflow-hidden">
+            <img src="assets/img/download (4).jpeg" 
+                 alt="Database Certificate" 
+                 class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute top-4 right-4 w-12 h-12 bg-secondary/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+              <i class="ri-award-line text-secondary text-xl"></i>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-xl font-bold text-white mb-2">Database Management</h3>
+              <p class="text-gray-300 text-sm">Database design and optimization</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between">
+              <span class="text-secondary text-sm font-semibold uppercase tracking-wider">Certificate</span>
+              <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                <span class="text-gray-400 text-xs">Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 relative">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-6xl font-kaushan gradient-text mb-6">Let's Connect</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+        <p class="text-xl text-gray-400 mt-6">Ready to start your next project? Let's build something amazing together</p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-16">
+        <!-- Contact Info -->
+        <div class="space-y-8">
+          <div class="glass p-8 rounded-2xl hover:bg-primary/5 transition-all duration-300 group">
+            <div class="flex items-start gap-6">
+              <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <i class="ri-map-pin-line text-2xl text-primary"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-white mb-2">Location</h3>
+                <p class="text-gray-300 text-lg">Samal Ward No-3, Kirtipur</p>
+                <p class="text-gray-300 text-lg">Kathmandu, Nepal</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass p-8 rounded-2xl hover:bg-secondary/5 transition-all duration-300 group">
+            <div class="flex items-start gap-6">
+              <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <i class="ri-phone-line text-2xl text-secondary"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-white mb-2">Phone</h3>
+                <p class="text-gray-300 text-lg">+977 9813638784</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass p-8 rounded-2xl hover:bg-accent/5 transition-all duration-300 group">
+            <div class="flex items-start gap-6">
+              <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <i class="ri-mail-line text-2xl text-accent"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-white mb-2">Email</h3>
+                <p class="text-gray-300 text-lg break-all">krijanmaharjan31@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="glass rounded-2xl overflow-hidden">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.9457793894862!2d85.2715280265079!3d27.679771095429814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190038024029%3A0x42694026c06637f4!2sSamal%20dhoka!5e1!3m2!1sen!2snp!4v1742873739826!5m2!1sen!2snp" 
+              width="100%" 
+              height="300" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              class="w-full h-72 rounded-2xl">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glass p-8 rounded-2xl">
+          <form class="space-y-6" id="contact-form">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-gray-300 mb-3 font-semibold">
+                  <i class="ri-user-line mr-2"></i>Name
+                </label>
+                <input 
+                  type="text" 
+                  required
+                  class="w-full px-6 py-4 bg-black/20 border border-gray-600 rounded-xl focus:border-primary focus:outline-none transition-all duration-300 text-white placeholder-gray-500" 
+                  placeholder="Your Name">
+              </div>
+              <div>
+                <label class="block text-gray-300 mb-3 font-semibold">
+                  <i class="ri-mail-line mr-2"></i>Email
+                </label>
+                <input 
+                  type="email" 
+                  required
+                  class="w-full px-6 py-4 bg-black/20 border border-gray-600 rounded-xl focus:border-primary focus:outline-none transition-all duration-300 text-white placeholder-gray-500" 
+                  placeholder="your@email.com">
+              </div>
+            </div>
+            <div>
+              <label class="block text-gray-300 mb-3 font-semibold">
+                <i class="ri-chat-3-line mr-2"></i>Subject
+              </label>
+              <input 
+                type="text" 
+                required
+                class="w-full px-6 py-4 bg-black/20 border border-gray-600 rounded-xl focus:border-primary focus:outline-none transition-all duration-300 text-white placeholder-gray-500" 
+                placeholder="Project Discussion">
+            </div>
+            <div>
+              <label class="block text-gray-300 mb-3 font-semibold">
+                <i class="ri-message-3-line mr-2"></i>Message
+              </label>
+              <textarea 
+                rows="6" 
+                required
+                class="w-full px-6 py-4 bg-black/20 border border-gray-600 rounded-xl focus:border-primary focus:outline-none transition-all duration-300 resize-none text-white placeholder-gray-500" 
+                placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button 
+              type="submit" 
+              class="w-full btn-primary px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105">
+              <i class="ri-send-plane-line mr-2"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 border-t border-gray-800">
+    <div class="container mx-auto px-6">
+      <div class="text-center space-y-6">
+        <div class="text-3xl font-dancing gradient-text">Krijan Maharjan</div>
+        <p class="text-gray-400 text-lg">
+          © 2025 <span class="text-primary font-semibold">Krijan Maharjan</span>. Crafted with ❤️ and lots of ☕
+        </p>
+        <div class="flex justify-center gap-4">
+          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fkrijan-maharjan-06a086317" 
+             class="w-12 h-12 glass rounded-full flex items-center justify-center hover:text-primary transition-all duration-300 hover:scale-110">
+            <i class="ri-linkedin-line text-xl"></i>
+          </a>
+          <a href="https://www.facebook.com/share/1CLCZT9Bos/" 
+             class="w-12 h-12 glass rounded-full flex items-center justify-center hover:text-primary transition-all duration-300 hover:scale-110">
+            <i class="ri-facebook-line text-xl"></i>
+          </a>
+          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fkrijan446" 
+             class="w-12 h-12 glass rounded-full flex items-center justify-center hover:text-primary transition-all duration-300 hover:scale-110">
+            <i class="ri-instagram-line text-xl"></i>
+          </a>
+        </div>
+        <div class="text-gray-500 text-sm font-jetbrains">
+          "Code is poetry written in logic" ✨
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- JavaScript -->
+  <script>
+    // Preloader
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      setTimeout(() => {
+        preloader.style.opacity = '0';
+        setTimeout(() => {
+          preloader.style.display = 'none';
+        }, 500);
+      }, 2000);
+    });
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    // Custom Cursor
+    const cursor = document.getElementById('cursor');
+    const cursorFollower = document.getElementById('cursor-follower');
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      
+      setTimeout(() => {
+        cursorFollower.style.left = e.clientX + 'px';
+        cursorFollower.style.top = e.clientY + 'px';
+      }, 100);
+    });
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
 
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Navigation Active State
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section');
+
+    function updateActiveNav() {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('nav-active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('nav-active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveNav);
+
+    // Smooth Scrolling
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+          targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+
+        // Close mobile menu if open
+        if (!mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    });
+
+    // Typewriter Effect
+    const typewriterText = document.getElementById('typewriter-text');
+    const texts = ['Developer', 'Designer', 'Problem Solver', 'Tech Enthusiast'];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeWriter() {
+      const currentText = texts[textIndex];
+      
+      if (isDeleting) {
+        typewriterText.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typewriterText.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      if (!isDeleting && charIndex === currentText.length) {
+        setTimeout(() => isDeleting = true, 2000);
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+      }
+
+      const typingSpeed = isDeleting ? 50 : 100;
+      setTimeout(typeWriter, typingSpeed);
+    }
+
+    // Start typewriter effect after page load
+    setTimeout(typeWriter, 3000);
+
+    // Floating Particles
+    function createParticle() {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      particle.style.left = Math.random() * 100 + 'vw';
+      particle.style.width = particle.style.height = Math.random() * 4 + 2 + 'px';
+      particle.style.animationDuration = Math.random() * 3 + 5 + 's';
+      particle.style.opacity = Math.random() * 0.5 + 0.2;
+      
+      const colors = ['#6366f1', '#ec4899', '#06b6d4'];
+      particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+      
+      document.getElementById('particles-container').appendChild(particle);
+
+      setTimeout(() => {
+        particle.remove();
+      }, 8000);
+    }
+
+    // Create particles periodically
+    setInterval(createParticle, 300);
+
+    // Progress Ring Animation
+    function animateProgressRings() {
+      const progressRings = document.querySelectorAll('.progress-ring-circle');
+      
+      progressRings.forEach(ring => {
+        const percentage = ring.getAttribute('data-percentage');
+        const circumference = 2 * Math.PI * 40; // radius = 40
+        const offset = circumference - (percentage / 100) * circumference;
+        
+        ring.style.strokeDashoffset = offset;
+      });
+    }
+
+    // Animate progress rings when skills section is in view
+    const skillsSection = document.getElementById('skills');
+    const skillsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setTimeout(animateProgressRings, 500);
+          skillsObserver.unobserve(entry.target);
+        }
+      });
+    });
+
+    skillsObserver.observe(skillsSection);
+
+    // Contact Form Handling
+    const contactForm = document.getElementById('contact-form');
+    
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(contactForm);
+      const name = formData.get('name') || contactForm.querySelector('input[type="text"]').value;
+      const email = formData.get('email') || contactForm.querySelector('input[type="email"]').value;
+      const subject = formData.get('subject') || contactForm.querySelectorAll('input[type="text"]')[1].value;
+      const message = formData.get('message') || contactForm.querySelector('textarea').value;
+      
+      // Simple form validation
+      if (!name || !email || !subject || !message) {
+        alert('Please fill in all fields');
+        return;
+      }
+
+      // Simulate form submission
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+      const originalText = submitButton.innerHTML;
+      
+      submitButton.innerHTML = '<i class="ri-loader-4-line mr-2 animate-spin"></i>Sending...';
+      submitButton.disabled = true;
+      
+      setTimeout(() => {
+        alert('Thank you for your message! I will get back to you soon.');
+        contactForm.reset();
+        submitButton.innerHTML = originalText;
+        submitButton.disabled = false;
+      }, 2000);
+    });
+
+    // Scroll Animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements for animation
+    document.querySelectorAll('.skill-card, .certificate-card').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+
+    // Cursor hover effects
+    document.querySelectorAll('a, button, .skill-card, .certificate-card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.transform = 'scale(1.5)';
+        cursorFollower.style.transform = 'scale(1.2)';
+      });
+      
+      el.addEventListener('mouseleave', () => {
+        cursor.style.transform = 'scale(1)';
+        cursorFollower.style.transform = 'scale(1)';
+      });
+    });
+
+    // Performance optimization - Throttle scroll events
+    let ticking = false;
+    
+    function updateOnScroll() {
+      updateActiveNav();
+      ticking = false;
+    }
+    
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(updateOnScroll);
+        ticking = true;
+      }
+    });
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      // Set initial active nav
+      updateActiveNav();
+      
+      // Add loading class removal
+      document.body.classList.add('loaded');
+    });
+  </script>
 </body>
-
 </html>
